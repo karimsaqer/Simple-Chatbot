@@ -15,7 +15,7 @@ def save_data(data: dict, filepath: str):
 # find best match for user input in questions list
 def find_best_match(user_input: str, questions: list[str]) -> str or None:
     print('Hello')
-    best_match = get_close_matches(user_input, questions, n=1, cutoff=0.1)
+    best_match = get_close_matches(user_input, questions, n=1, cutoff=0.8)
     return best_match[0] if best_match else None
     
 # get answer for the question
